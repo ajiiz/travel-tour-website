@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Trending = () => {
+const Footer = () => {
     return (
         <div>
 
@@ -8,4 +8,4 @@ const Trending = () => {
     )
 }
 
-export default Trending
+export default Footer
