@@ -10,3 +10,14 @@ $c-orange: #fb8f1d;
 $c-black: #202336;
 $c-gray: #b8becd;
 $c-white: #fff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: $font-article;
+    overflow-x: hidden;
+}
