@@ -83,10 +83,23 @@ html, body {
     outline: none;
     border-radius: 8px;
     cursor: pointer;
+    transition: .3s color ease-in-out, .3s background-color ease-in-out;
 }
 
 .btn--reversed {
     color: $c-orange;
     border: 1px solid $c-orange;
     background-color: $c-white;
+}
+
+.btn:hover {
+    color: $c-orange;
+    background-color: $c-white;
+    border: 1px solid $c-orange;
+}
+
+.btn--reversed:hover {
+    color: $c-white;
+    background-color: $c-orange;
+    border: none;
 }
