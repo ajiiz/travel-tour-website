@@ -26,6 +26,7 @@ html, body {
     height: 15vh;
     width: 100%;
     font-family: $font-nav;
+    font-weight: 600;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -53,11 +54,16 @@ html, body {
             &__item {
                 color: $c-gray;
                 cursor: pointer;
-                padding: 0 0.5rem 0 0.5rem;
+                margin: 0 0.5rem 0 0.5rem;
             }
 
             &__item--active {
-                font-weight: bold;
+                font-weight: bolder;
+                color: $c-black;
+            }
+
+            &__item:hover {
+                font-weight: bolder;
                 color: $c-black;
             }
         }
