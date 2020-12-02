@@ -66,6 +66,15 @@ html, body {
         align-items: center;
         flex: 0.55;
 
+        &__burger {
+            font-size: 35px;
+            color: #202336;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            display: none;
+        }
+
         &__items {
             text-decoration: none;
             list-style-type: none;
@@ -130,4 +139,22 @@ html, body {
     color: $c-white;
     background-color: $c-orange;
     border: none;
+}
+
+@media (max-width: 900px) {
+    .nav-bar {
+        &__menu {
+            justify-content: center;
+            &__items {
+                display: none;
+            }
+            &__btn {
+                display: none;
+            }
+            &__burger {
+                display: flex;
+                margin-left: 2rem;
+            }
+        }
+    }
 }
