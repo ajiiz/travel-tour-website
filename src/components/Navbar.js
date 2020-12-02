@@ -1,5 +1,6 @@
 import React from 'react'
 import HamburgerMenu from './HamburgerMenu'
+import { GiHamburgerMenu } from 'react-icons/gi'
 
 const Navbar = () => {
     return (
@@ -18,6 +19,9 @@ const Navbar = () => {
                 </ul>
                 <button className="nav-bar__menu__btn btn btn--reversed">Login</button>
                 <button className="nav-bar__menu__btn btn">Register</button>
+                <div className="nav-bar__menu__burger">
+                    <GiHamburgerMenu />
+                </div>
             </div>
         </div>
     )
