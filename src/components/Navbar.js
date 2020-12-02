@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import HamburgerMenu from './HamburgerMenu'
 import { GiHamburgerMenu } from 'react-icons/gi'
 
 const Navbar = () => {
+
+    const [isHamburgerMenu, setIsHamburgerMenu] = useState(false);
+
     return (
         <div className="nav-bar">
             <div className="nav-bar__logo">
@@ -23,6 +26,11 @@ const Navbar = () => {
                     <GiHamburgerMenu />
                 </div>
             </div>
+            {
+                (isHamburgerMenu) ?
+                <HamburgerMenu />
+                : null
+            }
         </div>
     )
 }
