@@ -76,8 +76,6 @@ html, body {
         }
 
         &__items {
-            text-decoration: none;
-            list-style-type: none;
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
@@ -100,6 +98,7 @@ html, body {
         }
 
         &__btn {
+            font-size: 1rem;
             margin: 0 0.5rem 0 0.5rem;
         }
 
@@ -109,11 +108,53 @@ html, body {
     }
 }
 
+.hamburger-menu {
+    height: 100vh;
+    width: 70vw;
+    position: absolute;
+    left: 100vw;
+    top: 0;
+    background-color: $c-green;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+
+    &__BsX-icon {
+        position: absolute;
+        top: 3.5vh;
+        left: 50vw;
+        font-size: 3.5rem;
+        cursor: pointer;
+    }
+
+    &__items {
+        margin-bottom: 3rem;
+
+        &__item {
+            font-size: 1.5rem;
+            margin: 1.5rem;
+        }
+    }
+
+    &__btn {
+        font-size: 1.3rem;
+        margin: 0.5rem;
+        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.slide-in {
+    transform: translateX(-70vw);
+}
 
 .btn {
     width: 132px;
     height: 40px;
-    font-size: 1rem;
     color: $c-white;
     background-color: $c-orange;
     border: none;
@@ -141,10 +182,16 @@ html, body {
     border: none;
 }
 
+ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+
 @media (max-width: 900px) {
     .nav-bar {
         &__menu {
             justify-content: center;
+
             &__items {
                 display: none;
             }
@@ -156,5 +203,8 @@ html, body {
                 margin-left: 2rem;
             }
         }
+    }
+    .hamburger-menu {
+        display: flex;
     }
 }
