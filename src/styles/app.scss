@@ -135,7 +135,14 @@ html, body {
         &__item {
             font-size: 1.5rem;
             margin: 1.5rem;
+            cursor: pointer;
         }
+
+        &__item:hover {
+            font-weight: bolder;
+            color: $c-black;
+        }
+
     }
 
     &__btn {
