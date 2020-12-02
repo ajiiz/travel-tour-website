@@ -1,10 +1,12 @@
 import React from 'react'
 import { BsX } from 'react-icons/bs'
 
-const HamburgerMenu = () => {
+const HamburgerMenu = ({ handleClick }) => {
     return (
         <div className="hamburger-menu">
-            <BsX />
+            <div className="hamburger-menu__BsX-icon">
+                <BsX onClick={() => handleClick()}/>
+            </div>
             <ul className="hamburger-menu__items">
                 <li className="hamburger-menu__items__item nav-bar__menu__items__item--active">Home</li>
                 <li className="hamburger-menu__items__item">Destinations</li>
