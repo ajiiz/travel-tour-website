@@ -1,9 +1,9 @@
 import React from 'react'
 import { BsX } from 'react-icons/bs'
 
-const HamburgerMenu = ({ handleClick }) => {
+const HamburgerMenu = ({ handleClick, isHamburgerMenu }) => {
     return (
-        <div className="hamburger-menu">
+        <div className={(isHamburgerMenu) ? "hamburger-menu slide-in" : "hamburger-menu"}>
             <div className="hamburger-menu__BsX-icon">
                 <BsX onClick={() => handleClick()}/>
             </div>
