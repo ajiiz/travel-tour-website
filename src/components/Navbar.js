@@ -1,4 +1,5 @@
 import React from 'react'
+import HamburgerMenu from './HamburgerMenu'
 
 const Navbar = () => {
     return (
