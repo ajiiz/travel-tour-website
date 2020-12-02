@@ -53,13 +53,21 @@ html, body {
             &__item {
                 color: $c-gray;
                 cursor: pointer;
-                padding: 0 0.5rem 0px 0.5rem;
+                padding: 0 0.5rem 0 0.5rem;
             }
 
             &__item--active {
                 font-weight: bold;
                 color: $c-black;
             }
+        }
+
+        &__btn {
+            margin: 0 0.5rem 0 0.5rem;
+        }
+
+        &__btn:nth-child(2) {
+            margin-left: 1rem;
         }
     }
 }
@@ -75,4 +83,10 @@ html, body {
     outline: none;
     border-radius: 8px;
     cursor: pointer;
+}
+
+.btn--reversed {
+    color: $c-orange;
+    border: 1px solid $c-orange;
+    background-color: $c-white;
 }
