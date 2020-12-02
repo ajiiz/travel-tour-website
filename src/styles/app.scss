@@ -29,17 +29,37 @@ html, body {
     flex-direction: row;
     align-items: center;
 
+    &__logo {
+        flex: 0.5;
+        display: flex;
+        justify-content: center;
+    }
+
     &__menu {
         width: 30%;
-        text-decoration: none;
-        list-style-type: none;
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
+        align-items: center;
+        flex: 0.5;
 
-        &__item--active {
-            font-weight: bold;
+        &__items {
+            text-decoration: none;
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            &__item {
+                font-family: $font-nav;
+                color: $c-gray;
+                cursor: pointer;
+                padding: 0 0.5rem 0px 0.5rem;
+            }
+
+            &__item--active {
+                font-weight: bold;
+                color: $c-black;
+            }
         }
     }
 }
