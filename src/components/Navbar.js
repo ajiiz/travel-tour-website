@@ -3,7 +3,11 @@ import React from 'react'
 const Navbar = () => {
     return (
         <div className="nav-bar">
-            <div className="nav-bar__logo">there goes logo</div>
+            <div className="nav-bar__logo">
+                <div className="nav-bar__logo__outer-circle">
+                    <div className="nav-bar__logo__outer-circle__inner-circle"></div>
+                </div>
+            </div>
             <div className="nav-bar__menu">
                 <ul className="nav-bar__menu__items">
                     <li className="nav-bar__menu__items__item nav-bar__menu__items__item--active">Home</li>
