@@ -32,11 +32,7 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
-        {
-            (isHamburgerMenu) ?
-            <HamburgerMenu handleClick={handleClick}/>
-            : null
-        }
+        <HamburgerMenu handleClick={handleClick} isHamburgerMenu={isHamburgerMenu} />
         </>
     )
 }
