@@ -6,6 +6,10 @@ const Navbar = () => {
 
     const [isHamburgerMenu, setIsHamburgerMenu] = useState(false);
 
+    const handleClick = () => {
+        setIsHamburgerMenu(!isHamburgerMenu)
+    }
+
     return (
         <div className="nav-bar">
             <div className="nav-bar__logo">
@@ -23,12 +27,12 @@ const Navbar = () => {
                 <button className="nav-bar__menu__btn btn btn--reversed">Login</button>
                 <button className="nav-bar__menu__btn btn">Register</button>
                 <div className="nav-bar__menu__burger">
-                    <GiHamburgerMenu />
+                    <GiHamburgerMenu onClick={handleClick} />
                 </div>
             </div>
             {
                 (isHamburgerMenu) ?
-                <HamburgerMenu />
+                <HamburgerMenu handleClick={handleClick}/>
                 : null
             }
         </div>
