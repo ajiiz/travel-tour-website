@@ -11,6 +11,7 @@ const Navbar = () => {
     }
 
     return (
+        <>
         <div className="nav-bar">
             <div className="nav-bar__logo">
                 <div className="nav-bar__logo__outer-circle">
@@ -30,12 +31,13 @@ const Navbar = () => {
                     <GiHamburgerMenu onClick={handleClick} />
                 </div>
             </div>
-            {
-                (isHamburgerMenu) ?
-                <HamburgerMenu handleClick={handleClick}/>
-                : null
-            }
         </div>
+        {
+            (isHamburgerMenu) ?
+            <HamburgerMenu handleClick={handleClick}/>
+            : null
+        }
+        </>
     )
 }
 
