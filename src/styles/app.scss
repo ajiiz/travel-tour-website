@@ -25,6 +25,7 @@ html, body {
 .nav-bar {
     height: 15vh;
     width: 100%;
+    font-family: $font-nav;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -50,7 +51,6 @@ html, body {
             flex-wrap: nowrap;
 
             &__item {
-                font-family: $font-nav;
                 color: $c-gray;
                 cursor: pointer;
                 padding: 0 0.5rem 0px 0.5rem;
@@ -62,4 +62,17 @@ html, body {
             }
         }
     }
+}
+
+
+.btn {
+    width: 132px;
+    height: 40px;
+    font-size: 1rem;
+    color: $c-white;
+    background-color: $c-orange;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
 }
