@@ -10,6 +10,7 @@ $c-orange: #fb8f1d;
 $c-black: #202336;
 $c-gray: #b8becd;
 $c-white: #fff;
+$c-green: #1abe84;
 
 * {
     margin: 0;
@@ -32,9 +33,30 @@ html, body {
     align-items: center;
 
     &__logo {
-        flex: 0.5;
-        display: flex;
+        flex: 0.45;
+        display:flex;
         justify-content: center;
+        align-items: center;
+
+        &__outer-circle {
+            background: $c-green;
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            position: relative;
+
+            &__inner-circle {
+                position: absolute;
+                background: $c-orange;
+                border-radius: 50%;
+                height: 16px;
+                width: 16px;
+                top: 50%;
+                left: 50%;
+                margin: -8px 0px 0px -8px;
+                box-shadow: 0 0 0 3px $c-white;
+              }
+          }
     }
 
     &__menu {
@@ -42,7 +64,7 @@ html, body {
         display: flex;
         flex-direction: row;
         align-items: center;
-        flex: 0.5;
+        flex: 0.55;
 
         &__items {
             text-decoration: none;
@@ -54,7 +76,7 @@ html, body {
             &__item {
                 color: $c-gray;
                 cursor: pointer;
-                margin: 0 0.5rem 0 0.5rem;
+                margin: 0 0.7rem 0 0.7rem;
             }
 
             &__item--active {
