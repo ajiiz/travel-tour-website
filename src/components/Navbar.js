@@ -11,7 +11,7 @@ const Navbar = () => {
                     <li className="nav-bar__menu__items__item">About</li>
                     <li className="nav-bar__menu__items__item">Partner</li>
                 </ul>
-                <button className="nav-bar__menu__btn btn btn-reversed">Login</button>
+                <button className="nav-bar__menu__btn btn btn--reversed">Login</button>
                 <button className="nav-bar__menu__btn btn">Register</button>
             </div>
         </div>
