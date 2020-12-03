@@ -1,5 +1,6 @@
 import React from 'react'
 import HeaderImage from '../assets/header.svg'
+import { BiChevronDown } from 'react-icons/bi'
 
 const Header = () => {
     return (
