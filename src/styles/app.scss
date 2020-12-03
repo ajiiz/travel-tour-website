@@ -200,15 +200,30 @@ header {
     flex-direction: row;
 
     .header-info {
-        width: 40%;
+        width: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 50%;
+
+            &__main {
+                font-family: $font-header;
+                font-size: 3.5rem;
+                width: 70%;
+            }
+
+        }
+
     }
 
     .header-image {
-        width: 60%;
+        width: 50%;
         img {
             width: 100%;
             height: 100%;
