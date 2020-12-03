@@ -11,7 +11,7 @@ const Header = () => {
                 </div>
                 <div className="header-info__finder">
                     <p className="header-info__finder__text">Holiday finder</p>
-                    <hr className="header-info__text__line__line"/>
+                    <hr className="header-info__finder__line"/>
                     <div className="header-info__finder__btns">
                         <FinderButton text="Location"/>
                         <FinderButton text="Activity"/>
