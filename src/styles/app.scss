@@ -210,7 +210,8 @@ header {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 50%;
+            width: 80%;
+            height: 40%;
 
             &__main {
                 font-family: $font-header;
@@ -219,7 +220,27 @@ header {
             }
 
         }
+        &__finder {
+            height: 60%;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
+            &__text {
+                width: 70%;
+                font-family: $font-nav;
+                font-size: 1.25rem;
+                font-weight: bold;
+            }
+
+            &__line {
+                width: 70%;
+                margin: 0.8rem 0 0.8rem 0;
+                background: $c-black;
+                height: 0.1rem;
+            }
+        }
     }
 
     .header-image {
