@@ -212,7 +212,7 @@ header {
             align-items: center;
             justify-content: center;
             width: 80%;
-            height: 40%;
+            height: 35%;
 
             &__main {
                 font-family: $font-header;
@@ -306,5 +306,38 @@ header {
     }
     .hamburger-menu {
         display: flex;
+    }
+
+    header {
+        .header-info {
+            width: 100%;
+            &__text {
+                &__main {
+                    font-size: 3rem;
+                }
+            }
+            &__finder {
+                &__btns {
+                    &__btn:nth-child(4) {
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+        .header-image {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    header {
+        .header-info {
+            &__text {
+                &__main {
+                    font-size: 2rem;
+                }
+            }
+        }
     }
 }
