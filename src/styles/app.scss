@@ -162,6 +162,7 @@ html, body {
 .btn {
     width: 132px;
     height: 40px;
+    font-size: 1rem;
     color: $c-white;
     background-color: $c-orange;
     border: none;
@@ -221,7 +222,7 @@ header {
 
         }
         &__finder {
-            height: 60%;
+            height: fit-content;
             width: 80%;
             display: flex;
             flex-direction: column;
@@ -240,6 +241,36 @@ header {
                 background: $c-black;
                 height: 0.1rem;
             }
+
+            &__btns {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 70%;
+
+                &__btn {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    border: $c-gray 1px solid;
+                    border-radius: 8px;
+                    margin: 0.6rem;
+                    width: 155px;
+                    height: 42px;
+                    cursor: pointer;
+
+                    &__text {
+                        flex: 0.8;
+                    }
+                }
+
+                &__btn:nth-child(4) {
+                    margin-bottom: 2rem;
+                }
+            }
+
         }
     }
 
