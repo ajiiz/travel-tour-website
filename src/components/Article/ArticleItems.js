@@ -1,4 +1,4 @@
-export const ArticleItems = [
+const ArticleItems = [
     {
         header: "A new way to explore the world",
         details: "For decades travellers have reached for Lonely Planet books when looking to plan and execute their percect trip, but now, they can also let Lonely Planet Experiences lead the way.",
@@ -10,3 +10,5 @@ export const ArticleItems = [
         btnText: "Download"
     }
 ]
+
+export default ArticleItems
