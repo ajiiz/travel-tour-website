@@ -20,6 +20,7 @@ const App = () => {
         header={ArticleItems[0].header}
         details={ArticleItems[0].details}
         btnText={ArticleItems[0].btnText}
+        reversed={false}
       />
       <Destinations />
       <Article
@@ -27,6 +28,7 @@ const App = () => {
         header={ArticleItems[1].header}
         details={ArticleItems[1].details}
         btnText={ArticleItems[1].btnText}
+        reversed={true}
       />
       <Testimonials />
       <Trending />
