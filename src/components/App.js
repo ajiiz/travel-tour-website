@@ -15,9 +15,19 @@ const App = () => {
     <>
       <NavBar />
       <Header />
-      <Article />
+      <Article
+        image={ArticleImage1}
+        header={ArticleItems[0].header}
+        details={ArticleItems[0].details}
+        btnText={ArticleItems[0].btnText}
+      />
       <Destinations />
-      <Article />
+      <Article
+        image={ArticleImage2}
+        header={ArticleItems[1].header}
+        details={ArticleItems[1].details}
+        btnText={ArticleItems[1].btnText}
+      />
       <Testimonials />
       <Trending />
       <Footer />
