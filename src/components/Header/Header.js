@@ -1,6 +1,6 @@
 import React from 'react'
-import HeaderImage from '../assets/header.svg'
-import FinderButton from '../components/FinderButton'
+import HeaderImage from '../../assets/header.svg'
+import FinderButton from './FinderButton'
 
 const Header = () => {
     return (
