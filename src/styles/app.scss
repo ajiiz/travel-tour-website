@@ -8,7 +8,8 @@ $font-nav: 'Inter', sans-serif;
 
 $c-orange: #fb8f1d;
 $c-black: #202336;
-$c-gray: #b8becd;
+$c-lightgray: #b8becd;
+$c-gray: #7D7987;
 $c-white: #fff;
 $c-green: #1abe84;
 
@@ -81,7 +82,7 @@ html, body {
             flex-wrap: nowrap;
 
             &__item {
-                color: $c-gray;
+                color: $c-lightgray;
                 cursor: pointer;
                 margin: 0 0.7rem 0 0.7rem;
             }
@@ -254,7 +255,7 @@ header {
                     flex-direction: row;
                     justify-content: center;
                     align-items: center;
-                    border: $c-gray 1px solid;
+                    border: $c-lightgray 1px solid;
                     border-radius: 8px;
                     margin: 0.6rem;
                     width: 155px;
