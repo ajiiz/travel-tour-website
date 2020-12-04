@@ -319,6 +319,7 @@ header {
         justify-content: center;
 
         &__header {
+            width: 70%;
             font-family: $font-header;
             margin-bottom: 1.5rem;
         }
@@ -382,15 +383,49 @@ header {
             display: none;
         }
     }
+
+    .article {
+        flex-direction: column;
+
+        &__image {
+            width: 100%;
+            height: 50%;
+        }
+
+        &__info {
+            width: 100%;
+            height: 50%;
+            align-items: center;
+        }
+    }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     header {
         .header-info {
             &__text {
                 &__main {
                     font-size: 2.5rem;
                 }
+            }
+        }
+    }
+    .article {
+        flex-direction: column;
+        height: 110vh;
+
+        &__image {
+            width: 100%;
+            height: 50%;
+        }
+
+        &__info {
+            &__details {
+                margin-bottom: 1.5rem;
+            }
+
+            &__header {
+                font-size: 1.5rem;
             }
         }
     }
