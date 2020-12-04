@@ -287,6 +287,18 @@ header {
     }
 }
 
+.article {
+    height: 80vh;
+    width: 100%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
 @media (max-width: 900px) {
     .nav-bar {
         &__menu {
