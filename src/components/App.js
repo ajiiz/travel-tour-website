@@ -8,6 +8,7 @@ import Testimonials from './Testimonials'
 import Trending from './Trending'
 import ArticleImage1 from '../assets/article-1.svg'
 import ArticleImage2 from '../assets/article-2.svg'
+import ArticleItems from './Article/ArticleItems'
 
 const App = () => {
   return (
