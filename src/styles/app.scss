@@ -333,6 +333,14 @@ header {
     }
 }
 
+.article--reversed {
+    flex-direction: row-reverse;
+}
+
+.article__info--reversed {
+    align-items: flex-end;
+}
+
 @media (max-width: 900px) {
     .nav-bar {
         &__menu {
