@@ -20,8 +20,8 @@ const Testimonials = () => {
             <div className="testimonials__image">
                 <img src={ProfileImage} alt="profile"></img>
                 <div className="testimonials__image__btns">
-                    <FiChevronLeft />
-                    <FiChevronRight />
+                    <FiChevronLeft className="testimonials__image__btns__btn testimonials__image__btns__btn--inactive" />
+                    <FiChevronRight className="testimonials__image__btns__btn testimonials__image__btns__btn--active" />
                 </div>
             </div>
         </div>
