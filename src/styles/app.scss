@@ -115,6 +115,7 @@ html, body {
     position: fixed;
     left: 100vw;
     top: 0;
+    z-index: 1;
     background-color: $c-green;
     display: none;
     flex-direction: column;
