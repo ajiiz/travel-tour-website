@@ -1,6 +1,6 @@
 import React from 'react'
 import Article from './Article/Article'
-import Destinations from './Destinations'
+import Destinations from './Destinations/Destinations'
 import Header from './Header/Header'
 import Footer from './Footer'
 import NavBar from './NavBar/Navbar'
