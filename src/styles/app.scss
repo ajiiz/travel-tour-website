@@ -581,6 +581,23 @@ header {
             align-items: center;
         }
     }
+
+    .testimonials {
+        flex-direction: column;
+        height: fit-content;
+
+        &__text {
+            width: 50%;
+            margin: 1rem 0 2.5rem 0;
+        }
+
+        &__image {
+            img {
+                height: 350px;
+                width: 350px;
+            }
+        }
+    }
 }
 
 @media (max-width: 450px) {
@@ -595,7 +612,7 @@ header {
     }
     .article {
         flex-direction: column;
-        height: 110vh;
+        height: 100vh;
 
         &__image {
             width: 100%;
@@ -621,6 +638,14 @@ header {
             &__text {
                 width: 30%;
                 font-size: 0.9rem;
+            }
+        }
+    }
+    .testimonials {
+        &__image {
+            img {
+                height: 300px;
+                width: 300px;
             }
         }
     }
