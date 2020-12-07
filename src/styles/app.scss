@@ -354,7 +354,7 @@ header {
 
     &__header {
         height: 10%;
-        width: 60%;
+        width: 80%;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -379,6 +379,49 @@ header {
 
         &__text:hover {
             color: $c-green;
+        }
+    }
+
+    &__items {
+        height: 90%;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        &__item {
+            height: 100%;
+            &__image {
+                height: 50%;
+                img {
+                    border-radius: 8px;
+                }
+            }
+
+            &__text {
+                width: 50%;
+                height: 50px;
+                background: $c-white;
+                font-family: $font-nav;
+                line-height: 1.2rem;
+                transform: translateY(-100%);
+                border-radius: 0 10px 0 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                &__name {
+                    font-size: 1rem;
+                    font-weight: bold;
+                }
+
+                &__country {
+                    font-weight: 100;
+                    font-size: 0.8rem;
+                }
+            }
         }
     }
 }
