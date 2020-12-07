@@ -471,7 +471,18 @@ header {
         }
     }
 
+    &__image {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
 
+        img {
+            height: 400px;
+            width: 400px;
+        }
+
+
+    }
 }
 
 @media (max-width: 1310px) {
