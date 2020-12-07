@@ -481,7 +481,36 @@ header {
             width: 400px;
         }
 
+        &__btns {
+            width: 25%;
+            height: 60px;
+            transform: translateY(-60px);
+            background: $c-white;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            border-radius: 10px 0 0 0;
 
+            &__btn {
+                border: 2px solid black;
+                border-radius: 50%;
+                padding: 4px;
+                font-size: 1.8rem;
+                cursor: pointer;
+            }
+
+            &__btn--inactive {
+                border-color: $c-lightgray;
+                color: $c-lightgray;
+            }
+
+            &__btn--active:hover {
+                border: 2px solid $c-green;
+                color: $c-green;
+            }
+
+        }
     }
 }
 
