@@ -425,6 +425,15 @@ header {
     }
 }
 
+@media (max-width: 1310px) {
+    .destinations {
+        &__items {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    }
+}
+
 @media (max-width: 900px) {
     .nav-bar {
         &__menu {
@@ -509,6 +518,18 @@ header {
 
             &__header {
                 font-size: 1.5rem;
+            }
+        }
+    }
+    .destinations {
+        &__header {
+            &__main {
+                width: 70%;
+                font-size: 1.8rem;
+            }
+            &__text {
+                width: 30%;
+                font-size: 0.9rem;
             }
         }
     }
