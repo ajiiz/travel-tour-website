@@ -1,9 +1,8 @@
 import React from 'react'
 
-const DestinationItems = () => {
+const DestinationItems = ({ name, country, image }) => {
     return (
         <div>
-
         </div>
     )
 }
