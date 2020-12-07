@@ -19,7 +19,7 @@ const Testimonials = () => {
             </div>
             <div className="testimonials__image">
                 <img src={ProfileImage} alt="profile"></img>
-                <div clasName="testimonials__image__btns">
+                <div className="testimonials__image__btns">
                     <FiChevronLeft />
                     <FiChevronRight />
                 </div>
