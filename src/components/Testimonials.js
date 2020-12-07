@@ -1,6 +1,7 @@
 import React from 'react'
 import ProfileImage from "../assets/test-1.jpg"
 import Stars from "../assets/stars.png"
+import { FiChevronRight, FiChevronLeft } from "react-icons/fi"
 
 const Testimonials = () => {
     return (
@@ -18,6 +19,10 @@ const Testimonials = () => {
             </div>
             <div className="testimonials__image">
                 <img src={ProfileImage} alt="profile"></img>
+                <div clasName="testimonials__image__btns">
+                    <FiChevronLeft />
+                    <FiChevronRight />
+                </div>
             </div>
         </div>
     )
