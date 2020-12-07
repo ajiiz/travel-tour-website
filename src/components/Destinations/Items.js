@@ -1,23 +1,28 @@
+import Image_1 from "../../assets/dest-1.png"
+import Image_2 from "../../assets/dest-2.png"
+import Image_3 from "../../assets/dest-3.png"
+import Image_4 from "../../assets/dest-4.png"
+
 const Items = [
     {
         name: "Raja Ampat",
         country: "Indonesia",
-        image: "dest-1.png"
+        image: Image_1
     },
     {
         name: "Fanjingshan",
         country: "China",
-        image: "dest-2.png"
+        image: Image_2
     },
     {
         name: "Vevey",
         country: "Switzerland",
-        image: "dest-3.png"
+        image: Image_3
     },
     {
         name: "Skadar",
         country: "Montenegro",
-        image: "dest-4.png"
+        image: Image_4
     }
 ]
 
