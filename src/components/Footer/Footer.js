@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from "../NavBar/Logo"
 import Items from "./Items"
 import FooterItem from "./FooterItem"
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -28,6 +29,13 @@ const Footer = () => {
                         )
                     })
                 }
+            </div>
+            <div className="footer__icons">
+                <FaTwitter />
+                <FaFacebookF />
+                <FaInstagram />
+                <FaLinkedinIn />
+                <FaYoutube />
             </div>
         </div>
     )
