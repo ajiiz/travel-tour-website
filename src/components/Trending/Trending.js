@@ -1,4 +1,6 @@
 import React from 'react'
+import TrendingItem from "./TrendingItem"
+import Items from "./Items"
 
 const Trending = () => {
     return (
@@ -7,7 +9,7 @@ const Trending = () => {
                 <h1 className="trending__header__main">Trending stories</h1>
                 <p className="trending__header__text">View all &gt;</p>
             </div>
-            <div className="trnding__items">
+            <div className="trending__items">
 
             </div>
         </div>
