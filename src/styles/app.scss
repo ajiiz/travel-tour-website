@@ -554,6 +554,61 @@ header {
         }
 
     }
+
+    &__items {
+        height: 90%;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 5rem;
+
+        &__item {
+            &__image {
+                margin-bottom: 0.5rem;
+                img {
+                    width: 240px;
+                    height: 240px;
+                    border-radius: 10px 10px 0 0;
+                }
+            }
+
+            &__text {
+                width: 240px;
+                height: fit-content;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                &__header {
+                    width: 100%;
+                    font-size: 1.1rem;
+                    font-family: $font-nav;
+                    line-height: 1.5rem;
+                    margin-bottom: 0.6rem;
+                }
+
+                &__details {
+                    font-family: $font-article;
+                    font-size: 0.9rem;
+                    color: $c-gray;
+                    margin-bottom: 0.7rem;
+                }
+
+                &__info {
+                    color: $c-orange;
+                    font-family: $font-nav;
+                    font-weight: bold;
+                    font-size: 0.8rem;
+                    cursor: pointer;
+                }
+
+                &__info:hover {
+                    color: $c-green;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 1310px) {
