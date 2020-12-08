@@ -621,6 +621,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 2.5rem;
 
     &__info {
         width: 30%;
@@ -630,12 +631,42 @@ header {
         align-items: flex-start;
 
         &__advice {
-            margin: 1rem 0 3rem 0;
+            margin: 1rem 0 1.5rem 0;
         }
     }
 
     &__items {
         width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            &__element--header {
+                font-weight: bolder;
+                padding-bottom: 0.1rem;
+                color: $c-black;
+            }
+
+            &__element {
+                font-size: 0.9rem;
+                margin: 0.3rem;
+                cursor: pointer;
+            }
+
+            &__element:nth-child(1) {
+                cursor: text;
+                font-size: 1.1rem;
+            }
+
+            &__element:hover {
+                color: $c-black;
+            }
+        }
     }
 
     &__icons {
