@@ -32,6 +32,7 @@ html, body {
     flex-direction: row;
     align-items: center;
     position: fixed;
+    z-index: 1;
 
     &__logo {
         flex: 0.45;
