@@ -1,5 +1,6 @@
 import React from 'react'
-import Logo from "./NavBar/Logo"
+import Logo from "../NavBar/Logo"
+import Items from "./Items"
 
 const Footer = () => {
     return (
