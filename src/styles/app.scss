@@ -618,6 +618,13 @@ header {
             justify-content: space-evenly;
         }
     }
+
+    .trending {
+        &__items {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    }
 }
 
 @media (max-width: 900px) {
@@ -724,6 +731,7 @@ header {
             }
         }
     }
+
     .destinations {
         &__header {
             &__main {
@@ -736,11 +744,32 @@ header {
             }
         }
     }
+
     .testimonials {
         &__image {
             img {
                 height: 300px;
                 width: 300px;
+            }
+        }
+    }
+
+    .trending {
+        &__header {
+            &__main {
+                width: 70%;
+                font-size: 1.8rem;
+            }
+
+            &__text {
+                width: 30%;
+                font-size: 0.9rem;
+            }
+        }
+
+        &__items {
+            &__item {
+                margin-bottom: 2rem;
             }
         }
     }
