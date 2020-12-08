@@ -31,11 +31,11 @@ const Footer = () => {
                 }
             </div>
             <div className="footer__icons">
-                <FaTwitter />
-                <FaFacebookF />
-                <FaInstagram />
-                <FaLinkedinIn />
-                <FaYoutube />
+                <FaTwitter className="footer__icons__icon" />
+                <FaFacebookF className="footer__icons__icon" />
+                <FaInstagram className="footer__icons__icon" />
+                <FaLinkedinIn className="footer__icons__icon" />
+                <FaYoutube className="footer__icons__icon" />
             </div>
         </div>
     )
