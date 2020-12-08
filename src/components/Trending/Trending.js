@@ -10,7 +10,18 @@ const Trending = () => {
                 <p className="trending__header__text">View all &gt;</p>
             </div>
             <div className="trending__items">
-
+                {
+                    Items.map((data, key) => {
+                        return (
+                            <TrendingItem
+                                header={data.header}
+                                details={data.details}
+                                image={data.image}
+                                key={key}
+                            />
+                        )
+                    })
+                }
             </div>
         </div>
     )
