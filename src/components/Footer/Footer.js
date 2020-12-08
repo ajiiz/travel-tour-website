@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from "../NavBar/Logo"
 import Items from "./Items"
+import FooterItem from "./FooterItem"
 
 const Footer = () => {
     return (
@@ -14,6 +15,18 @@ const Footer = () => {
                 <p className="footer__info__copyright">
                     ©2020 Thousand Sunny. All rights reserved
                 </p>
+            </div>
+            <div className="footer__items">
+                {
+                    Items.map((data, key) => {
+                        return (
+                            <FooterItem
+                                header={data.header}
+                                details={data.details}
+                            />
+                        )
+                    })
+                }
             </div>
         </div>
     )
