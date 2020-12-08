@@ -23,6 +23,7 @@ const Footer = () => {
                             <FooterItem
                                 header={data.header}
                                 details={data.details}
+                                key={key}
                             />
                         )
                     })
