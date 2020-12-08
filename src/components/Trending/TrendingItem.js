@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TrendingItems = () => {
+const TrendingItem = () => {
     return (
         <div>
 
@@ -8,4 +8,4 @@ const TrendingItems = () => {
     )
 }
 
-export default TrendingItems
+export default TrendingItem
