@@ -10,7 +10,7 @@ Website was made to improve my programming and development skills.
 * [Contact](#contact)
 
 ## Status
-#### Published live version at:
+#### Published live version at: [travel-tour](https://travel-tour-website.netlify.app/)
 
 ## Technologies
 #### Project is created with:
