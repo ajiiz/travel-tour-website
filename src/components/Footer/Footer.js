@@ -17,7 +17,6 @@ const Footer = () => {
             scrollTrigger: {
                 trigger: container,
                 start: '-210 50%',
-                markers: true
             }
         })
     }, [])
