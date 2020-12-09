@@ -1,8 +1,24 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
+import { Power1, gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 const Article = ({ image, header, details, btnText, reversed}) => {
+
+    let container = useRef(null)
+
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger)
+        gsap.from(container.children,
+            {duration: 1.5, opacity: 0, ease: Power1.easeOut, stagger: 0.5,
+            scrollTrigger: {
+                trigger: container,
+                start: '-96 50%',
+            }
+        })
+    }, [])
+
     return (
-        <div className={(reversed) ? "article article--reversed" : "article"}>
+        <div className={(reversed) ? "article article--reversed" : "article"} ref={el => container = el}>
             <div className="article__image">
                 <img src={image} alt="article"></img>
             </div>
