@@ -16,7 +16,8 @@ const Footer = () => {
             {duration: 1.5, opacity: 0, ease: Power1.easeOut, stagger: 0.5,
             scrollTrigger: {
                 trigger: container,
-                start: '-96 50%',
+                start: '-210 50%',
+                markers: true
             }
         })
     }, [])
