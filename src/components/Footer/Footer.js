@@ -1,12 +1,28 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import Logo from "../NavBar/Logo"
 import Items from "./Items"
 import FooterItem from "./FooterItem"
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import { Power1, gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 const Footer = () => {
+
+    let container = useRef(null)
+
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger)
+        gsap.from(container.children,
+            {duration: 1.5, opacity: 0, ease: Power1.easeOut, stagger: 0.5,
+            scrollTrigger: {
+                trigger: container,
+                start: '-96 50%',
+            }
+        })
+    }, [])
+
     return (
-        <div className="footer">
+        <div className="footer" ref={el => container = el}>
             <div className="footer__items">
                 {
                     Items.map((data, key) => {
