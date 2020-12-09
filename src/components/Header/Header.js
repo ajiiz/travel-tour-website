@@ -1,10 +1,17 @@
-import React from 'react'
+import React,{ useEffect, useRef } from 'react'
 import HeaderImage from '../../assets/header.svg'
 import FinderButton from './FinderButton'
+import { Power1, gsap } from 'gsap'
 
 const Header = () => {
+
+    let container = useRef(null)
+    useEffect(() => {
+        gsap.from(container.children, {delay: 3, duration: 1.5, opacity: 0, ease: Power1.easeOut, stagger: 0.5})
+    },[])
+
     return (
-        <header>
+        <header ref={el => container = el}>
             <div className="header-info">
                 <div className="header-info__text">
                     <h1 className="header-info__text__main">Explore and Travel</h1>
