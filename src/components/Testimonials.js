@@ -1,11 +1,27 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import ProfileImage from "../assets/test-1.jpg"
 import Stars from "../assets/stars.png"
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi"
+import { Power1, gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 const Testimonials = () => {
+
+    let container = useRef(null)
+
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger)
+        gsap.from(container.children,
+            {duration: 1.5, opacity: 0, ease: Power1.easeOut, stagger: 0.5,
+            scrollTrigger: {
+                trigger: container,
+                start: '-96 50%',
+            }
+        })
+    }, [])
+
     return (
-        <div className="testimonials">
+        <div className="testimonials" ref={el => container = el}>
             <div className="testimonials__text">
                 <h1 className="testimonials__text__header">Testimonials</h1>
                 <img src={Stars} alt="stars"></img>
